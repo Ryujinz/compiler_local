@@ -9,6 +9,7 @@ cd ${KERNEL_ROOTDIR}
 	CC=${CLANG_ROOTDIR}/bin/clang \
 	CROSS_COMPILE=${CLANG_ROOTDIR}/bin/aarch64-linux-gnu- \
 	CROSS_COMPILE_ARM32=${CLANG_ROOTDIR}/bin/arm-linux-gnueabi- \
+	CLANG_TRIPLE=aarch-linux-gnu- \
 	AR=llvm-ar \
 	NM=llvm-nm \
 	LD=ld.lld \
